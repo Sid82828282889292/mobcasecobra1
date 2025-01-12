@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ['utfs.io'],
+  },
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+export default nextConfig
 
-export default nextConfig;
+
+// domains: ['osiyjeaifa.ufs.sh'],
+
+// export default nextConfig;

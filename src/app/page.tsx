@@ -1,19 +1,20 @@
-import MaxWidthWrapper from "./components/MaxWidthWrapper";
-import Mobile from "./components/Mobile";
-import { AnimReviews } from "./components/AnimReviews";
-import { buttonVariants } from "./components/ui/button";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Mobile from "@/components/Mobile";
+import { AnimReviews } from "@/components/AnimReviews";
+import { buttonVariants } from "@/components/ui/button";
 import { ArrowRight, Check, Star } from "lucide-react";
-import { Icons } from "./components/Icons";
+import { Icons } from "@/components/Icons";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-slate-50">
+    <div className="bg-slate-50 grainy-light">
       <section>
         <MaxWidthWrapper className="pb-24 pt-10 lg:grid lg:grid-cols-3 sm:pb-32 lg:gap-x-0 xl:gap-x-8 lg:pt-24 xl:pt-32 lg:pb-52">
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t via-slate-50/50 from-slate-50 h-28" />
                 <img
                   src="/snake-1.png"
                   className="w-full"
@@ -114,7 +115,7 @@ export default function Home() {
       </section>
 
       {/* value section */}
-      <section className=" bg-slate-100 py-24">
+      <section className=" bg-slate-100 grainy-dark py-24">
         <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
           <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
             <h2 className="order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900">
