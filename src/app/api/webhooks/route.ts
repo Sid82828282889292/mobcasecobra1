@@ -4,6 +4,8 @@ import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
+
+//POST is the http work
 export async function POST(req: Request) {
   try {
     const body = await req.text();

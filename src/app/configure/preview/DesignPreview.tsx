@@ -67,7 +67,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
       //
       createPaymentSession({ configId: id });
     } else {
-      //login
+      //we need to login
       localStorage.setItem("configurationId", id);
       setIsLoginModalOpen(true);
     }

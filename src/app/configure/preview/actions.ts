@@ -42,6 +42,7 @@ export const createCheckoutSession = async ({
     },
   });
 
+  //Logout the userids to get from KINDE.
   console.log(user.id, configuration.id);
 
   if (existingOrder) {

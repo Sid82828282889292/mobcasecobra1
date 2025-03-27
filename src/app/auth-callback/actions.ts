@@ -16,6 +16,7 @@ export const getAuthStatus = async () => {
   });
 
   if (!existingUser) {
+    //creating new user and extracting the ids from KINDE.
     await db.user.create({
       data: {
         id: user.id,
